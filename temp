@@ -1,0 +1,114 @@
+CREATE TABLESPACE TSA_47 "C:\Coding projects\DWM\DBA_FILES";
+
+
+CREATE TABLE SALES
+(
+    prod_id NUMBER(3),
+    cust_id NUMBER(3),
+    promo_id NUMBER(3),
+    quantity_sold NUMBER(3),
+    amount_sold NUMBER(3),
+    sale_date DATE
+)
+PARTITION BY RANGE (sale_date) 
+(
+    PARTITION SALES_Q1 VALUES LESS THAN (TO_DATE('2024-04-01', 'YYYY-MM-DD')) TABLESPACE TSB_47,
+    PARTITION SALES_Q2 VALUES LESS THAN (TO_DATE('2024-07-01', 'YYYY-MM-DD')) TABLESPACE TSB_47,
+    PARTITION SALES_Q3 VALUES LESS THAN (TO_DATE('2024-10-01', 'YYYY-MM-DD')) TABLESPACE TSB_47,
+    PARTITION SALES_Q4 VALUES LESS THAN (TO_DATE('2025-01-01', 'YYYY-MM-DD')) TABLESPACE TSB_47
+);
+
+
+CREATE TABLE SALES
+(
+    prod_id NUMBER(3),
+    cust_id NUMBER(3),
+    promo_id NUMBER(3),
+    quantity_sold NUMBER(3),
+    amount_sold NUMBER(3),
+    sale_date DATE
+)
+PARTITION BY RANGE (sale_date) 
+(
+    PARTITION SALES_Q1 VALUES LESS THAN (TO_DATE('2024-04-01', 'YYYY-MM-DD')) TABLESPACE TSB_47,
+    PARTITION SALES_Q2 VALUES LESS THAN (TO_DATE('2024-07-01', 'YYYY-MM-DD')) TABLESPACE TSB_47,
+    PARTITION SALES_Q3 VALUES LESS THAN (TO_DATE('2024-10-01', 'YYYY-MM-DD')) TABLESPACE TSB_47,
+    PARTITION SALES_Q4 VALUES LESS THAN (TO_DATE('2025-01-01', 'YYYY-MM-DD')) TABLESPACE TSB_47
+)
+ENABLE ROW MOVEMENT;
+
+
+
+
+select table_name,partition_name,high_value
+from user_tab_partitions
+where table_name = 'SALES';
+
+CREATE TABLE Dept_Sales (
+    deptno NUMBER(3),
+    deptname VARCHAR2(50),
+    quarterly_sales NUMBER(10),
+    state VARCHAR2(2)
+)
+PARTITION BY LIST (state) 
+(
+    PARTITION Northwest VALUES ('OR', 'WA') TABLESPACE TSB_47,
+    PARTITION Southwest VALUES ('AZ', 'UT', 'NM') TABLESPACE TSB_47,
+    PARTITION Northeast VALUES ('NY', 'VM', 'NJ') TABLESPACE TSB_47,
+    PARTITION Southeast VALUES ('FL', 'GA') TABLESPACE TSB_47,
+    PARTITION NorthCentral VALUES ('SD', 'WI') TABLESPACE TSB_47,
+    PARTITION SouthCentral VALUES ('OK', 'TX') TABLESPACE TSB_47
+);
+
+INSERT INTO Dept_Sales (deptno, deptname, quarterly_sales, state) VALUES (10, 'accounting', 100, 'WA'); 
+INSERT INTO Dept_Sales (deptno, deptname, quarterly_sales, state) VALUES (20, 'R&D', 150, 'OR');
+INSERT INTO Dept_Sales (deptno, deptname, quarterly_sales, state) VALUES (30, 'sales', 100, 'FL');
+INSERT INTO Dept_Sales (deptno, deptname, quarterly_sales, state) VALUES (40, 'HR', 10, 'TX');
+INSERT INTO Dept_Sales (deptno, deptname, quarterly_sales, state) VALUES (50, 'systems engineering', 10, 'CA');
+
+
+
+CREATE TABLE customer_location (
+    cust_id     NUMBER,
+    cust_name   VARCHAR2(100),
+    cust_state  VARCHAR2(2),
+    time_id     DATE
+)
+PARTITION BY RANGE (time_id)
+SUBPARTITION BY LIST (cust_state)
+(
+    PARTITION old VALUES LESS THAN (TO_DATE('2005-01-01', 'YYYY-MM-DD'))
+        (SUBPARTITION west1 VALUES ('MH', 'GJ'),
+         SUBPARTITION south1 VALUES ('TN', 'AP'),
+         SUBPARTITION north1 VALUES ('UP', 'HP'),
+         SUBPARTITION unknown1 VALUES (DEFAULT)),
+    PARTITION acquired VALUES LESS THAN (TO_DATE('2010-01-01', 'YYYY-MM-DD'))
+        (SUBPARTITION west2 VALUES ('MH', 'GJ'),
+         SUBPARTITION south2 VALUES ('TN', 'AP'),
+         SUBPARTITION north2 VALUES ('UP', 'HP'),
+         SUBPARTITION unknown2 VALUES (DEFAULT)),
+    PARTITION recent VALUES LESS THAN (TO_DATE('2015-01-01', 'YYYY-MM-DD'))
+        (SUBPARTITION west3 VALUES ('MH', 'GJ'),
+         SUBPARTITION south3 VALUES ('TN', 'AP'),
+         SUBPARTITION north3 VALUES ('UP', 'HP'),
+         SUBPARTITION unknown3 VALUES (DEFAULT)),
+    PARTITION unknown VALUES LESS THAN (TO_DATE('9999-12-31', 'YYYY-MM-DD'))
+        (SUBPARTITION west4 VALUES ('MH', 'GJ'),
+         SUBPARTITION south4 VALUES ('TN', 'AP'),
+         SUBPARTITION north4 VALUES ('UP', 'HP'),
+         SUBPARTITION unknown4 VALUES (DEFAULT))
+);
+
+Insert random values in this table
+
+
+INSERT INTO customer_location (cust_id, cust_name, cust_state, time_id)
+VALUES
+    (1, 'John Doe', 'MH', TO_DATE('2004-12-31', 'YYYY-MM-DD')),
+    (2, 'Jane Smith', 'TN', TO_DATE('2006-05-15', 'YYYY-MM-DD')),
+    (3, 'Bob Johnson', 'AP', TO_DATE('2012-08-20', 'YYYY-MM-DD')),
+    (4, 'Alice Brown', 'UP', TO_DATE('2016-01-10', 'YYYY-MM-DD')),
+    (5, 'Charlie White', 'GJ', TO_DATE('2007-11-30', 'YYYY-MM-DD'));
+
+
+

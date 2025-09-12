@@ -1,0 +1,252 @@
+{
+  "paymentTerms": [
+    {
+      "term": "INCO",
+      "definition": "Initial Coin Offering. A fundraising method that trades future crypto coins for cryptocurrencies which have an immediate, liquid value."
+    },
+    {
+      "term": "Token",
+      "definition": "A unit of value that an organization creates to self-govern its business model, and empower its users to interact with its products, while facilitating the distribution and sharing of rewards and benefits to all of its stakeholders."
+    },
+    {
+      "term": "Whitepaper",
+      "definition": "A document prepared by an INCO project team before the INCO launch. It outlines the project, the technology behind it, the purpose and the team."
+    },
+    {
+      "term": "Smart Contract",
+      "definition": "A self-executing contract with the terms of the agreement between buyer and seller being directly written into lines of code. The code and the agreements contained therein exist across a distributed, decentralized blockchain network."
+    },
+    {
+      "term": "ERC-20",
+      "definition": "A standard for fungible tokens on the Ethereum blockchain. ERC stands for Ethereum Request for Comment, and 20 is the number that was assigned to this request."
+    },
+    {
+      "term": "ERC-721",
+      "definition": "A standard for non-fungible tokens on the Ethereum blockchain. ERC stands for Ethereum Request for Comment, and 721 is the number that was assigned to this request."
+    },
+    {
+      "term": "Decentralized",
+      "definition": "A system where the decision-making power is distributed and not held by a single entity."
+    },
+    {
+      "term": "Centralized",
+      "definition": "A system where the decision-making power is held by a single entity."
+    },
+    {
+      "term": "Blockchain",
+      "definition": "A decentralized, distributed ledger that records the provenance of a digital asset."
+    },
+    {
+      "term": "Cryptocurrency",
+      "definition": "A digital or virtual currency that uses cryptography for security."
+    },
+    {
+      "term": "Fungible",
+      "definition": "A good or asset is fungible if individual units are interchangeable."
+    },
+    {
+      "term": "Non-fungible",
+      "definition": "A good or asset is non-fungible if individual units are not interchangeable."
+    },
+    {
+      "term": "Mining",
+      "definition": "The process of adding transaction records to a blockchain."
+    }
+  ],
+  "incoTerms": [
+    {
+      "term": "INCO",
+      "definition": "Initial Coin Offering. A fundraising method that trades future crypto coins for cryptocurrencies which have an immediate, liquid value."
+    },
+    {
+      "term": "Token",
+      "definition": "A unit of value that an organization creates to self-govern its business model, and empower its users to interact with its products, while facilitating the distribution and sharing of rewards and benefits to all of its stakeholders."
+    },
+    {
+      "term": "Whitepaper",
+      "definition": "A document prepared by an INCO project team before the INCO launch. It outlines the project, the technology behind it, the purpose and the team."
+    },
+    {
+      "term": "Smart Contract",
+      "definition": "A self-executing contract with the terms of the agreement between buyer and seller being directly written into lines of code. The code and the agreements contained therein exist across a distributed, decentralized blockchain network."
+    },
+    {
+      "term": "ERC-20",
+      "definition": "A standard for fungible tokens on the Ethereum blockchain. ERC stands for Ethereum Request for Comment, and 20 is the number that was assigned to this request."
+    },
+    {
+      "term": "ERC-721",
+      "definition": "A standard for non-fungible tokens on the Ethereum blockchain. ERC stands for Ethereum Request for Comment, and 721 is the number that was assigned to this request."
+    },
+    {
+      "term": "Decentralized",
+      "definition": "A system where the decision-making power is distributed and not held by a single entity."
+    },
+    {
+      "term": "Centralized",
+      "definition": "A system where the decision-making power is held by a single entity."
+    },
+    {
+      "term": "Blockchain",
+      "definition": "A decentralized, distributed ledger that records the provenance of a digital asset."
+    },
+    {
+      "term": "Cryptocurrency",
+      "definition": "A digital or virtual currency that uses cryptography for security."
+    },
+    {
+      "term": "Fungible",
+      "definition": "A good or asset is fungible if individual units are interchangeable."
+    },
+    {
+      "term": "Non-fungible",
+      "definition": "A good or asset is non-fungible if individual units are not interchangeable."
+    },
+    {
+      "term": "Mining",
+      "definition": "The process of adding transaction records to a blockchain."
+    }
+  ],
+  "packagings": [
+    {
+      "term": "Standard Box",
+      "definition": "A standard cardboard box for general packaging."
+    },
+    {
+      "term": "Small Drum",
+      "definition": "A small standard packaging drum for chemicals."
+    },
+    {
+      "term": "Medium Drum",
+      "definition": "A medium standard packaging drum for chemicals."
+    },
+    {
+      "term": "Large Drum",
+      "definition": "A large standard packaging drum for chemicals."
+    },
+    {
+      "term": "Bubble Wrap",
+      "definition": "Protective packaging material with air-filled bubbles."
+    },
+    {
+      "term": "Plastic Bag",
+      "definition": "A simple plastic bag for lightweight items."
+    }
+  ],
+  "currencies": [
+    {
+      "full_name": "United States Dollar",
+      "shorthand": "USD",
+      "value_in_usd": 1
+    },
+    {
+      "full_name": "Indian Rupee",
+      "shorthand": "INR",
+      "value_in_usd": 0.012
+    },
+    {
+      "full_name": "Euro",
+      "shorthand": "EUR",
+      "value_in_usd": 1.08
+    },
+    {
+      "full_name": "British Pound Sterling",
+      "shorthand": "GBP",
+      "value_in_usd": 1.26
+    },
+    {
+      "full_name": "Australian Dollar",
+      "shorthand": "AUD",
+      "value_in_usd": 0.65
+    },
+    {
+      "full_name": "Canadian Dollar",
+      "shorthand": "CAD",
+      "value_in_usd": 0.74
+    },
+    {
+      "full_name": "Swiss Franc",
+      "shorthand": "CHF",
+      "value_in_usd": 1.12
+    },
+    {
+      "full_name": "Japanese Yen",
+      "shorthand": "JPY",
+      "value_in_usd": 0.0067
+    },
+    {
+      "full_name": "Chinese Yuan",
+      "shorthand": "CNY",
+      "value_in_usd": 0.14
+    },
+    {
+      "full_name": "South Korean Won",
+      "shorthand": "KRW",
+      "value_in_usd": 0.00075
+    },
+    {
+      "full_name": "Mexican Peso",
+      "shorthand": "MXN",
+      "value_in_usd": 0.059
+    },
+    {
+      "full_name": "Russian Ruble",
+      "shorthand": "RUB",
+      "value_in_usd": 0.011
+    },
+    {
+      "full_name": "Brazilian Real",
+      "shorthand": "BRL",
+      "value_in_usd": 0.2
+    },
+    {
+      "full_name": "South African Rand",
+      "shorthand": "ZAR",
+      "value_in_usd": 0.053
+    },
+    {
+      "full_name": "New Zealand Dollar",
+      "shorthand": "NZD",
+      "value_in_usd": 0.62
+    },
+    {
+      "full_name": "Singapore Dollar",
+      "shorthand": "SGD",
+      "value_in_usd": 0.74
+    },
+    {
+      "full_name": "Hong Kong Dollar",
+      "shorthand": "HKD",
+      "value_in_usd": 0.13
+    },
+    {
+      "full_name": "Turkish Lira",
+      "shorthand": "TRY",
+      "value_in_usd": 0.032
+    },
+    {
+      "full_name": "United Arab Emirates Dirham",
+      "shorthand": "AED",
+      "value_in_usd": 0.27
+    },
+    {
+      "full_name": "Saudi Riyal",
+      "shorthand": "SAR",
+      "value_in_usd": 0.27
+    }
+  ],
+  "applications": [
+    {
+      "term": "Used In Oil Bloating",
+      "definition": "Used to clean oil"
+    },
+    {
+      "term": "Dishwasher uses",
+      "definition": "Used to clean dishes"
+    },
+    {
+      "term": "Used In Water Purification",
+      "definition": "Used to purify water"
+    }
+  ]
+}

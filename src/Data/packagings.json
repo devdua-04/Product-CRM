@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Standard Box",
+    "description": "A standard cardboard box for general packaging."
+  },
+  {
+    "name": "Small Drum",
+    "description": "A small standard packaging drum for chemicals."
+  },
+  {
+    "name": "Medium Drum",
+    "description": "A medium standard packaging drum for chemicals."
+  },
+  {
+    "name": "Large Drum",
+    "description": "A large standard packaging drum for chemicals."
+  },
+  {
+    "name": "Bubble Wrap",
+    "description": "Protective packaging material with air-filled bubbles."
+  },
+  {
+    "name": "Plastic Bag",
+    "description": "A simple plastic bag for lightweight items."
+  }
+]
